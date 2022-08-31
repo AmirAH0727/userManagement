@@ -19,7 +19,6 @@ import java.util.Collections;
 @Entity
 public class AppUser implements UserDetails {
 
-
     @SequenceGenerator(
             name = "student_sequence",
             sequenceName = "student_sequence",
@@ -36,8 +35,8 @@ public class AppUser implements UserDetails {
     @Enumerated(EnumType.STRING)
     private AppUserRole appUserRole;
 
-    private Boolean locked;
-    private Boolean enabled;
+    private Boolean locked = false;
+    private Boolean enabled = false;
 
     public AppUser(String name,
                    String username,

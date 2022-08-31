@@ -8,7 +8,6 @@ public class RegistrationService {
 
     private EmailValidator emailValidator;
     public String register(RegistrationRequest request) {
-
-        return  "works";
+        return  "it works";
     }
 }
