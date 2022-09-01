@@ -1,5 +1,4 @@
 server:
-  port: 8088
   error:
     include-message: always
     include-binding-errors: always
@@ -11,12 +10,13 @@ spring:
     username: adessoAiAdmin
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: create-drop
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
         format_sql: true
     show-sql: true
+
 
   mail:
     host: localhost
